@@ -1,6 +1,6 @@
 {
     "name": "node-simple-sqs",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Reduced api to handle aws-sqs queues.",
     "engineStrict": true,
     "engines": {
@@ -31,7 +31,7 @@
     },
     "author": "Leonardo Alves <hello@leoalves.net>",
     "license": "MIT",
-    "main": "main.js",
+    "main": "./dist/src/main.js",
     "dependencies": {
         "aws-sdk": "^2.333.0"
     },
