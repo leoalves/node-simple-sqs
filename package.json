@@ -1,0 +1,47 @@
+{
+    "name": "node-simple-sqs",
+    "version": "0.0.1",
+    "description": "Reduced api to handle aws-sqs queues.",
+    "engineStrict": true,
+    "engines": {
+        "node": ">= 8.9.0"
+    },
+    "devDependencies": {
+        "@types/aws-sdk": "^2.7.0",
+        "@types/jest": "~23.3.1",
+        "@types/node": "~8.10.22",
+        "jest": "~23.4.2",
+        "rimraf": "~2.6.2",
+        "ts-jest": "~23.0.1",
+        "tslib": "^1.9.3",
+        "tslint": "~5.11.0",
+        "tslint-microsoft-contrib": "~5.1.0",
+        "tsutils": "~3.0.0",
+        "typescript": "~3.0.1"
+    },
+    "scripts": {
+        "clean": "rimraf coverage build tmp",
+        "build": "tsc -p tsconfig.release.json",
+        "watch": "tsc -w -p tsconfig.release.json",
+        "lint": "tslint -t stylish --project \"tsconfig.json\"",
+        "pretest": "npm run lint",
+        "test": "npm run test-only",
+        "test-only": "jest --coverage",
+        "test:watch": "jest --watch"
+    },
+    "author": "Leonardo Alves <hello@leoalves.net>",
+    "license": "MIT",
+    "main": "main.js",
+    "dependencies": {
+        "aws-sdk": "^2.333.0"
+    },
+    "keywords": [
+        "aws",
+        "sqs",
+        "sqs wrapper"
+    ],
+    "bugs": {
+        "url": "https://github.com/leoalves/node-simple-sqs/issues"
+    },
+    "homepage": "https://github.com/leoalves/node-simple-sqs#readme"
+}
