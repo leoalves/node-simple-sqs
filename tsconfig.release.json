@@ -3,7 +3,9 @@
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "dist",
-    "removeComments": true
+    "removeComments": true,
+    "declaration": true,
+    "allowJs": false
   },
   "include": ["src/**/*"]
 }
